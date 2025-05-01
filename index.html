@@ -99,8 +99,8 @@
         </div>
 
         <script>
-             // Function to fetch and display the exchange rate
-             function updateExchangeRate() {
+
+            function updateExchangeRate() {
                 var fromCurrency = document.getElementById("currencyFrom").value;
                 var toCurrency = document.getElementById("currencyTo").value;
 
@@ -124,7 +124,6 @@
                 }
             }
 
-            // Event listeners to update exchange rate as soon as a currency is selected
             document.getElementById("currencyFrom").addEventListener("change", updateExchangeRate);
             document.getElementById("currencyTo").addEventListener("change", updateExchangeRate);
 
@@ -150,7 +149,7 @@
                         alert("Error fetching data: " + error);
                     });
             });
-            // Initialize the popover for the menu button
+
             document.addEventListener('DOMContentLoaded', function () {
                 var popoverTrigger = document.getElementById('menuPopover');
                 var popoverContent = `
@@ -168,7 +167,7 @@
                     popover.toggle();
                 });
             });
-            // Add to Favourites
+            
 document.getElementById("add").addEventListener("click", function () {
     var fromCurrency = document.getElementById("currencyFrom").value;
     var toCurrency = document.getElementById("currencyTo").value;
@@ -183,7 +182,6 @@ document.getElementById("add").addEventListener("click", function () {
             convertedAmount: convertedAmount
         };
 
-        // Save to localStorage
         var favourites = JSON.parse(localStorage.getItem("favourites")) || [];
         favourites.push(favourite);
         localStorage.setItem("favourites", JSON.stringify(favourites));
