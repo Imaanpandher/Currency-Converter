@@ -18,7 +18,7 @@ body{
 
 .menu-btn {
     position: absolute;
-    top: 50%;
+    top: 49%;
     right: 10px;
     transform: translateY(-55%);
     height: 40px;
