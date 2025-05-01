@@ -64,12 +64,12 @@ body{
 }
 
 input[type="number"] {
-    width: 170px;
+    width: 172px;
     display: block;
 }
 
 #result {
-    width: 150px;
+    width: 148px;
     height: 38px;
     border-radius: 10px;
     margin-right: 20px;
