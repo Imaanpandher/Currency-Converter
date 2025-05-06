@@ -37,7 +37,7 @@ body{
     background-color: black;
     color: white;
     cursor: pointer;
-    transition: scale 0.25s ease-in, opacity 0.25s ease-in, filter 0.25s ease-in;
+    transition: scale 0.26s ease-in, opacity 0.26s ease-in, filter 0.25s ease-in;
 }
 
 #containing:has(.btn:hover) .btn:not(:hover){
